@@ -28,7 +28,24 @@ public class Warmup {
      * @return if searchForEven is true ? return the number of even numbers : return the number of odd numbers
      */
     public int oddEvenCounter(String number, boolean searchForEven) {
-        return -1;
+        int countz=0;
+        int countf=0;
+        if(searchForEven==true){
+            for (int i=0;i<number.length();i++){
+                if(number.charAt(i)%2==0){
+                    countz++;
+                }
+            }
+            return (countz);
+        }
+        else{
+            for (int i=0;i<number.length();i++){
+                if(number.charAt(i)%2!=0){
+                    countf++;
+                }
+            }
+            return (countf);
+        }
     }
 
     /**
